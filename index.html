@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body{
+            background-image: url("music_symbol.png");
+            background-position: cover;
+            background-repeat: calc();
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+        }
+     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:400px;
+        border: solid 3px rgb(11, 11, 21);
+        margin-left: 170px;
+        margin: auto;
+        border-radius:4px;
+     }
+     .button{
+        margin: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+     }
+     .header {
+        background-color: yellow;
+        border: solid 2px yellow;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        position: relative;
+        border-radius: 2px;
+        color: rgb(35, 26, 15);
+
+     }
+     .songslist{
+        background-color: green;
+        display: flex;
+        padding: 50px;
+        border: solid 5px green;
+        justify-content: center;
+        color: rgb(95, 8, 8);
+        position: relative;
+        font-size: large;
+     }
+     .songs {
+        background-color: rgb(91, 122, 60);
+        color: rgb(65, 4, 4);
+        position: relative;
+        border: solid 5px rgb(91,122,60);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        font-size: large;
+        align-items: center;
+
+     }
+     .buttoncontrol{
+        background-color: rgb(239, 87, 10);
+        border: solid 2px rgb(239, 87, 10);
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     .progressbar{
+        height: 10px;
+        background-color: rgb(38, 38, 145);
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+     }
+     .progress{
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color:rgb(178, 17, 17) ;
+     }
+
+    </style>
+</head>
+<body class="container">
+      <div class="header"><h1>MUSIC PLAYER</h1></div>
+    <div class="songslist">
+        <h2>List Of Songs</h2></div>
+        <section class="songs">
+            <ul>
+                <li>Song 1</li>
+                <li>Song 2</li>
+                <li>Song 3</li>
+                <li>Song 4</li>  
+                <li>Song 5</li>
+
+
+            </ul>
+        </section>
+    
+    <div class="progressbar">
+      <div class="progress">
+
+      </div>
+    </div>
+    <div class="buttoncontrol">
+        <button class="button" value="previous" id="previous"name="previous">&lt;&lt;</button>
+        <button class="button" value="play" id="play" name="play">&#9658;</button>
+        <button class="button" value="pause"  id="pause"name="pause">&#10074;&#10074;</button>
+        <button class="button" value="next"  id="next" name="next">&gt;&gt;</button>
+    </div>
+</body>
+</html>
